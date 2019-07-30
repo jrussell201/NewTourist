@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>Community Events Board</title>
+</head>
+
+<body>
+    <h1>Concerts</h1>
+    <div class="event-list">
+        <ul>
+            {% for concert in concerts %}
+            <li>{{ concerts[concert] }} </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+
+</html>
