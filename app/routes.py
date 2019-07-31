@@ -19,10 +19,12 @@ def question():
         #print (model.concerts)
         concerts=model.concerts[city]
         # if(city == 'New York":
-        
+        siteseeing= model.siteseeing[city]
+        restaurants= model.restaurants[city]
+        # print (model.resturants[city])
         #     return 
         # else:
-        return render_template("concerts.html",concerts=concerts)
+        return render_template("concerts.html",concerts=concerts,siteseeing=siteseeing,restaurants=restaurants)
         #return ("debugging")
         
 @app.route('/location')
