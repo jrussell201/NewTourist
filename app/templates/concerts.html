@@ -64,11 +64,7 @@
                     <div class="card-content">
                         <div class="event-list">
                             <ul>
-                                <center> {% for concert in concerts %} </center>
-                                <center>
-                                    <li>On {{ concerts[concert]}}, {{concert}} will be performing </li>
-                                </center>
-                                <center> {% endfor %} </center>
+
                             </ul>
                         </div>
                         <table>
@@ -82,21 +78,19 @@
 
                             <tbody>
                                 <tr>
-                                    <td>Meek Mill</td>
-                                    <td>Nipsey Hussle</td>
-                                    <td>Big Sean</td>
-                                    <td>J Cole</td>
-                                    <td></td>
-
+                                    <center> {% for concert in concerts %} </center>
+                                    <center>
+                                        <td> {{concert}} will be performing </td>
+                                    </center>
+                                    <center> {% endfor %} </center>
+                                    
                                 </tr>
                                 <th> Date </th>
                                 <tr>
-
-                                    <td>09/17/19</td>
-                                    <td>10/19/19</td>
-                                    <td>9/17/19</td>
-                                    <td>10/2/19</td>
-                                    <td></td>
+                                    <center> {% for concert in concerts %} </center>
+                                        <td>{{ concerts[concert]}}</td>
+                                        {% endfor %}
+                                   
                                 </tr>
                                 <th>Concert Price</th>
                                 <tr>
@@ -127,7 +121,7 @@
                         <ul>
                             <center>{% for siteseeing in siteseeing %}</center>
                             <center>
-                                <li>{{ siteseeing[siteseeing]}} {{siteseeing}} </center>
+                                <td>{{ siteseeing[siteseeing]}} {{siteseeing}}</td> </center>
                             </li>
                             <center>{% endfor %}</center>
                         </ul>
@@ -137,34 +131,30 @@
                                     <th>Sights to go enjoy!</th>
                                     <!--<th>Date</th>-->
                                     <!--<th>Item Price</th>-->
+                                 <center>   {% for siteseeing in siteseeing %} </center>
+                                 <td>{{ siteseeing[siteseeing]}} {{siteseeing}}</td>
+                                 <center>{% endfor %}</center>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                <tr>
-                                    <td>Runyon Canon Park</td>
-                                    <td>Hollywood Sign</td>
-                                    <td>Santa Monica Pier</td>
-                                    <td>Urban Lights</td>
-                                    <td>Griffith Observatory</td>
-
-                                </tr>
-                                <th> Location </th>
+                               
+                                <th> Do I suggest!? </th>
                                 <tr>
 
-                                    <td>Eastern end of the Santa Monica Mountains</td>
-                                    <td>On Mount Lee, in the Hollywood Hills area of the Santa Monica Mountains</td>
-                                    <td>Colorado Avenue in Santa Monica</td>
-                                    <td>Wilshire Boulevard entrance to the Los Angeles County Museum of Art</td>
-                                    <td>Sitting on the south-facing slope of Mount Hollywood in Los Angeles' Griffith Park</td>
+                                    <td>Nice place to go !</td>
+                                    <td>Explore the boroughs!</td>
+                                    <td>Have some fun with your family!</td>
+                                    <td>Very fun place to vist!</td>
+                                    <td>I highly recommend.</td>
                                 </tr>
                                 <th>Price</th>
                                 <tr>
                                     <td>Free to go!</td>
                                     <td>Free to see!</td>
-                                    <td>Ranges from $5-$10</td>
-                                    <td>$180.00</td>
-                                    <td>$7 for adults, and $3 for children</td>
+                                    <td>Free Admission!</td>
+                                    <td>$100.00</td>
+                                    <td>Free!</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -192,7 +182,7 @@
                             <ul>
                                 <center>{% for restaurants in restaurants %} </center>
                                 <center>
-                                    <li>{{ restaurants[restaurants]}} {{restaurants}} </li>
+                                    <td><li>{{ restaurants[restaurants]}} {{restaurants}} </li></td>
                                 </center>
                                 <center>{% endfor %}</center>
                             </ul>
@@ -202,26 +192,25 @@
                                         <th>Restaurants to visit</th>
                                         <!--<th>Date</th>-->
                                         <!--<th>Item Price</th>-->
+                                        
+                                <center>{% for restaurants in restaurants %} </center>
+                                 <td>{{ restaurants[restaurants]}} {{restaurants}} </td>
+                                   <center>{% endfor %}</center>
                                     </tr>
                                 </thead>
 
                                 <tbody>
                                     <tr>
-                                        <td>Chateau Marmont</td>
-                                        <td>YardBird Southern Table and Bar</td>
-                                        <td>The Ivy</td>
-                                        <td>Catch La</td>
-                                        <td>Nobu Malibu</td>
-
+                                       
                                     </tr>
-                                    <th> Location </th>
+                                    <th> Do I Suggest! </th>
                                     <tr>
 
-                                        <td>8221 Sunset Blvd, Los Angeles, CA 90046</td>
-                                        <td>8500 Beverly Blvd #112, Los Angeles, CA 90048</td>
-                                        <td>113 N Robertson Blvd, Los Angeles, CA 90048</td>
-                                        <td>8715 Melrose Ave, West Hollywood, CA 90069</td>
-                                        <td>22706 CA-1, Malibu, CA 90265</td>
+                                        <td>Yes!</td>
+                                        <td>You will love it!</td>
+                                        <td>Ofcourse!</td>
+                                        <td>Yummy!</td>
+                                        <td>You should definetly go here!</td>
                                     </tr>
                                     <th>Ratings</th>
                                     <tr>
