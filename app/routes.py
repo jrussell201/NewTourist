@@ -24,7 +24,8 @@ def question():
         # print (model.resturants[city])
         #     return 
         # else:
-        return render_template("concerts.html",concerts=concerts,siteseeing=siteseeing,restaurants=restaurants)
+        
+        return render_template("concerts.html",concerts=concerts,siteseeing=siteseeing,restaurants=restaurants,city=city)
         #return ("debugging")
         
 @app.route('/location')

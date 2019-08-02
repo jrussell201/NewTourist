@@ -46,6 +46,9 @@
 </nav>
 
 <body>
+    <div>
+        <h5 class="center"><i>Here we have somethings going on in one of the locations you chose!</i></h5>
+    </div>
 
     <body style="background-color:#c5cae9;">
 
@@ -53,7 +56,7 @@
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="static/msg.jpg">
+                        <img src="static/{{city}}1.jpg">
                         <span class="card-title">Card Title</span>
 
                         <h1><i><center>Concerts</center></i></h1>
@@ -61,39 +64,43 @@
                     <div class="card-content">
                         <div class="event-list">
                             <ul>
-                                {% for concert in concerts %}
-                                <li>On {{ concerts[concert]}}, {{concert}} will be performing </li>
-                                {% endfor %}
+                                <center> {% for concert in concerts %} </center>
+                                <center>
+                                    <li>On {{ concerts[concert]}}, {{concert}} will be performing </li>
+                                </center>
+                                <center> {% endfor %} </center>
                             </ul>
                         </div>
 
-                        
+
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
         <div class="row">
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="static/new york2.jpg">
-                        <span class="card-title">New York</span>
+                        <img src="static/{{city}}2.jpg">
+                        <span class="card-title"></span>
                     </div>
                     <div class="card-content">
                         <h1><i><center>Site Seeing</center></i></h1>
                         <ul>
-                            {% for siteseeing in siteseeing %}
-                            <li>{{ siteseeing[siteseeing]}} {{siteseeing}} </li>
-                            {% endfor %}
+                            <center>{% for siteseeing in siteseeing %}</center>
+                            <center>
+                                <li>{{ siteseeing[siteseeing]}} {{siteseeing}} </center>
+                            </li>
+                            <center>{% endfor %}</center>
                         </ul>
 
                     </div>
 
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
+
                 </div>
             </div>
         </div>
@@ -102,17 +109,19 @@
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="static/nobu.jpg">
-                        <span class="card-title">New York</span>
+                        <img src="static/{{city}}3.jpg">
+                        <span class="card-title"></span>
                     </div>
                     <div class="card-content">
                         <h1><i><center>Restaurants</center></i></h1>
 
                         <div class="event-list">
                             <ul>
-                                {% for restaurants in restaurants %}
-                                <li>{{ restaurants[restaurants]}} {{restaurants}} </li>
-                                {% endfor %}
+                                <center>{% for restaurants in restaurants %} </center>
+                                <center>
+                                    <li>{{ restaurants[restaurants]}} {{restaurants}} </li>
+                                </center>
+                                <center>{% endfor %}</center>
                             </ul>
 
 
@@ -120,7 +129,7 @@
 
                     </div>
                     <div class="card-action">
-                        <a href="#">This is a link</a>
+
                     </div>
                 </div>
             </div>

@@ -2,20 +2,31 @@
 
 <head>
     <title>FineDineTry!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 
-<body>
+<body style="background-color: #c5cae9  ;">
 
-    <body style="background-color: #c5cae9  ;">
+    <div class='container'>
         <nav>
             <div class="nav-wrapper  purple darken-4">
-                <img src="static/airplane.jpg"  class="brand-logo" height="63px">
+                <img src="static/airplane.jpg" class="brand-logo" height="63px">
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="/index">Home</a></li>
-                    <li><a href="badges.html">Hotels</a></li>
-                    <li><a href="collapsible.html">Rentals</a></li>
+                    <li><a href="https://www.booking.com/index.html?aid=309654;label=booking-be-en-us-Ncle0B5ACos0q12KmV3vJQS63640052092:pl:ta:p1:p22,523,000:ac:ap1t2:neg:fi:tikwd-13350800919:lp9004181:li:dec:dm;ws=&gclid=CjwKCAjwm4rqBRBUEiwAwaWjjESGABAc34KbGwq1GDk0d_CVruRzqievuehI_W8okIS8Vu2CLpSnYhoCWlsQAvD_BwE">Hotels</a></li>
+                    <li><a href="https://www.kayak.com/horizon/sem/cars/general?lang=en&skipapp=true&gclid=CjwKCAjwm4rqBRBUEiwAwaWjjLi7n6qx350Bj2rBJPtIl2TDvQCadSI2aghXDLW-mFecKhrm14wvUxoClZgQAvD_BwE&g_kw=rental+cars&aid=77832279111">Rentals</a></li>
                 </ul>
             </div>
         </nav>
@@ -28,28 +39,67 @@
                         <span class="card-title">FINE DINE AND TRY!</span>
                         <p>Hello, traveler we are here to give you some information, about upcoming concerts in a city you are going to!</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
 
+
+
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+        <!--<script src="js/bootstrap.min.js"></script>-->
+
+        <!--    // $("#carousel").carousel();-->
+
+
+        <style>
+            label {
+                padding-left: 20px;
+            }
+
+            #ny {
+                opacity: 100;
+            }
+
+            #la {
+                opacity: 100;
+            }
+
+            #paris {
+                opacity: 100;
+            }
+
+            #Tokyo {
+                opacity: 100;
+            }
+            
+            #Chicago {
+                opacity: 100;
+            }
+        </style>
         <p><i><b>Start, by telling me what city you want to go to!</b></i></p>
         <form method="POST" action="/question">
             <fieldset>
                 <legend>Where are you going?:</legend>
-                City:<br>
-                <input type="text" name="city" value=><br> (Optional)Date:<br>
+                <p>City:</p><br>
+                <p><input type="radio" name="city" id='ny' value="New York" class='circle'> <label for="ny" padding-left='80px'>New York</label></p>
+                <p><input type="radio" name="city" id='la' value="Los Angeles" class='circle'> <label for="la">Los Angeles</label></p>
+                <p><input type="radio" name="city" id='paris' value="Paris" class='circle'> <label for="paris">Paris</label></p>
+                <p><input type="radio" name="city" id='Tokyo' value="Tokyo" class='circle'> <label for="Tokyo">Tokyo</label></p>
+                <p><input type="radio" name="city" id='Chicago' value="Chicago" class='circle'> <label for="Chicago">Chicago</label></p>
+
+                <br> (Optional)Date:<br>
                 <input type="text" name="date" value=><br><br>
                 <input type="submit" value="Submit">
             </fieldset>
         </form>
 
-        <img src="/static/Hollywood.jpg" alt="Hollywood" width="300" height="300"> <img src="/static/washington.jpg" alt="washington" width="300" height="300"> <img src="/static/paris.jpg" alt="paris" width="300" height="300"> <img src="/static/italy.jpg"
+        <img src="/static/Los Angeles1.jpg" alt="Hollywood" width="300" height="300"> <img src="/static/washington.jpg" alt="washington" width="300" height="300"> <img src="/static/Paris1.jpg" alt="paris" width="300" height="300"> <img src="/static/italy.jpg"
             alt="italy" width="400" height="300">
 
 
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </body>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
 
 </html>
